@@ -17,6 +17,7 @@ Here’s an overview of my current setup:
 - **Resource Monitor**: [btop](https://github.com/aristocratos/btop)
 
 After using Linux for the past few years, I was surprised by how limited macOS felt out of the box, especially when it came to window management. This setup aims to address those shortcomings, by creating an environment similar to Sway or Hyprland. If you're coming from another tiling window manager, you'll feel right at home with these dotfiles.
+
 ## 🔎 Details
 
 ### 🌈 Color Scheme
@@ -34,7 +35,7 @@ Additionally, my sketchybar config uses [sketchybar-app-font](https://github.com
 
 ### ⌨️ Keyboard Shortcuts
 
-I highly suggest binding `capslock` to `control + option + command` using [Karabiner-Elements](https://karabiner-elements.pqrs.org/), as that combination of keys is used as the modifier key for my yabai/skhd config. After installing, go to Complex Modifications -> Add Your Own rule -> And paste the following:
+I highly suggest binding `capslock` to `control + option + command` using [Karabiner-Elements](https://karabiner-elements.pqrs.org/), since that combination of keys is used as the modifier key for my yabai/skhd config. After installing, go to Complex Modifications -> Add Your Own rule -> And paste the following:
 ```
 {
     "description": "Caps lock key -> hyper key without shift (⌘⌥⌃), Escape when tapped",
@@ -71,7 +72,7 @@ Below is an overview of the most important keyboard shortcuts.
 
 For a complete list, please check out the skhd config file.
 
-## ⚙️ Installations
+## ⚙️ Installation
 
 Clone this repository, and move all of the directories to `~/.config`. The wallpaper is in the Assets directory.
 
