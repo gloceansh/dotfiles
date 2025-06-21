@@ -5,4 +5,3 @@ This dotfiles repository includes a mix of my personal configurations and settin
 - Btop - https://github.com/rose-pine/btop
 - Fish - https://github.com/rose-pine/fish
 - Starship - https://github.com/rose-pine/starship
-- Sketchybar App Font - https://github.com/kvndrsslr/sketchybar-app-font
