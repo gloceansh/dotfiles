@@ -26,6 +26,13 @@ The main color scheme of my setup is [Rosé Pine](https://rosepinetheme.com/), a
 
 <img src="https://github.com/user-attachments/assets/72adc1ee-21c0-4102-afd8-c52f34ff54ba" alt="Rose Pine" width="600px">
 
+### 🌦️ Sketchybar Weather
+
+For the sketchybar weather plugin to work properly, you have to create an account and get an API key from [OpenWeather](https://openweathermap.org/api). After signing up, go grab your API key [here](https://home.openweathermap.org/api_keys) and paste it at the top of `~/.config/sketchybar/plugins/weather.sh`, alongisde you latitude and longitude which you can get by running `curl -s ipinfo.io/loc` in your terminal.
+
+> [!NOTE]
+> After creating your account, your API key might not work right away. Wait about 20-30 minutes for it to activate.
+
 ### 🔠 Fonts
 
 - **System/Interface Font**: [SF Pro](https://developer.apple.com/fonts/)
@@ -77,4 +84,4 @@ For a complete list, please check out the skhd config file.
 Clone this repository, and move all of the directories to `~/.config`. The wallpaper is in the Assets directory.
 
 > [!NOTE]
-> My dotfiles are still a work in progress, so expect some changes. If you encounter any issues, feel free to open an issue or a pull request.
+> My dotfiles are still a work in progress, so expect some changes. If you encounter any problems, feel free to open an issue or a pull request.
