@@ -1,7 +1,7 @@
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
-# Set the defaul tiling option to bsp (floating also available)
+# Set the default tiling option to bsp (floating also available)
 yabai -m config layout bsp
 
 # Set padding between windows
