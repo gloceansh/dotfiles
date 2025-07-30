@@ -46,7 +46,7 @@ sketchybar --add item volume right \
 sketchybar --add item battery right \
            --set battery icon.color=0xfff6c177 \
                          label.color=0xfff6c177 \
-                         update_freq=20 \
+                         update_freq=10 \
                          script="$PLUGIN_DIR/battery.sh" \
            --subscribe battery system_woke power_source_change
 
