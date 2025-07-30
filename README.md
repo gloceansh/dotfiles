@@ -28,7 +28,7 @@ The main color scheme of my setup is [Rosé Pine](https://rosepinetheme.com/), a
 
 ### 🌦️ Sketchybar Weather
 
-For the sketchybar weather plugin to work properly, you have to create an account and get an API key from [OpenWeather](https://openweathermap.org/api). After signing up, go grab your API key [here](https://home.openweathermap.org/api_keys) and paste it at the top of `~/.config/sketchybar/plugins/weather.sh`, alongisde you latitude and longitude which you can get by running `curl -s ipinfo.io/loc` in your terminal.
+For the sketchybar weather plugin to work properly, you have to create an account and get an API key from [OpenWeather](https://openweathermap.org/api). After signing up, go grab your API key [here](https://home.openweathermap.org/api_keys) and paste it at the top of `~/.config/sketchybar/plugins/weather.sh`.
 
 > [!NOTE]
 > After creating your account, your API key might not work right away. Wait about 20-30 minutes for it to activate.
