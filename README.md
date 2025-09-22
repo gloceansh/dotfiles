@@ -1,6 +1,6 @@
 # 👋 Welcome to my home!
 
-<img src="https://github.com/gloceansh/dotfiles/blob/main/Assets/macOS%20rice%202.0.png?raw=true" alt="Desktop" align="right" width="400px">
+<img src="https://github.com/gloceansh/dotfiles/blob/main/Assets/macOS%20Tahoe%20Rice%20(Dark).png?raw=true" alt="Desktop" align="right" width="400px">
 
 This is my personal collection of dotfiles for my macOS setup, which is focused on a minimal, elegant, keyboard-driven workflow.
 
