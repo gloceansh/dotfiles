@@ -6,7 +6,7 @@ This is my personal collection of dotfiles for my macOS setup, which is focused 
 
 Here’s an overview of my current setup:
 
-- **Operating System**: [macOS Sequoia](https://www.apple.com/macos/macos-sequoia/)
+- **Operating System**: [macOS Tahoe](https://www.apple.com/os/macos/)
 - **Window Manager**: [yabai](https://github.com/koekeishiya/yabai)
 - **Hotkeys**: [skhd](https://github.com/koekeishiya/skhd)
 - **App Launcher**: [Raycast](https://www.raycast.com/)
@@ -81,7 +81,7 @@ For a complete list, please check out the skhd config file.
 
 ## ⚙️ Installation
 
-Clone this repository, and move all of the directories to `~/.config`. The wallpaper is in the Assets directory.
+Clone this repository, and move all of the directories to `~/.config`. The wallpapers are in the Assets directory.
 
 > [!NOTE]
 > My dotfiles are still a work in progress, so expect some changes. If you encounter any problems, feel free to open an issue or a pull request.
