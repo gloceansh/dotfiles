@@ -1,6 +1,6 @@
 # 👋 Welcome to my home!
 
-<img src="https://github.com/gloceansh/dotfiles/blob/main/Assets/macOS%20Tahoe%20Rice%20(Dark).png?raw=true" alt="Desktop" align="right" width="400px">
+<img src="https://github.com/gloceansh/dotfiles/blob/everforest/Assets/macOS%20Tahoe%20Rice%20(Everforest).png?raw=true" alt="Desktop" align="right" width="400px">
 
 This is my personal collection of dotfiles for my macOS setup, which is focused on a minimal, elegant, keyboard-driven workflow.
 
@@ -25,9 +25,7 @@ After using Linux for the past few years, I was surprised by how limited macOS f
 
 ### 🌈 Color Scheme
 
-The main color scheme of my setup is [Rosé Pine](https://rosepinetheme.com/), a minimal yet elegant theme that is easy on the eyes.
-
-<img src="https://github.com/user-attachments/assets/72adc1ee-21c0-4102-afd8-c52f34ff54ba" alt="Rose Pine" width="600px">
+The color scheme of this setup is [Everforest](https://everforest.vercel.app/), an warm and comfy theme that is easy on the eyes.
 
 ### 🌦️ Sketchybar Weather
 
@@ -84,7 +82,7 @@ For a complete list, please check out the skhd config file.
 
 ## ⚙️ Installation
 
-Clone this repository, and move all of the directories to `~/.config`. The wallpapers are in the Assets directory.
+Clone this branch, and move all of the directories to `~/.config`. The wallpapers are in the Assets directory.
 
 > [!NOTE]
 > My dotfiles are still a work in progress, so expect some changes. If you encounter any problems, feel free to open an issue or a pull request.
