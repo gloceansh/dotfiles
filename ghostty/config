@@ -1,4 +1,5 @@
-theme = Rose Pine
+# install the theme from here: https://github.com/jrswab/ghostty-everforest
+theme = everforest-dark
 
 background-opacity = 0.9
 background-blur = true
