@@ -8,6 +8,7 @@ Here’s an overview of my current setup:
 
 - **Operating System**: [macOS Tahoe](https://www.apple.com/os/macos/)
 - **Window Manager**: [yabai](https://github.com/koekeishiya/yabai)
+- **App Borders**: [JankyBorders](https://github.com/FelixKratz/JankyBorders)
 - **Hotkeys**: [skhd](https://github.com/koekeishiya/skhd)
 - **App Launcher**: [Raycast](https://www.raycast.com/)
 - **Status Bar**: [Sketchybar](https://github.com/FelixKratz/SketchyBar)
