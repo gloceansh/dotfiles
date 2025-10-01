@@ -20,32 +20,32 @@ sketchybar --default \
            icon.padding_right=4 \
            label.padding_left=6 \
            label.padding_right=10 \
-           background.color=0xaa2a273f \
+           background.color=0xaa343F44 \
            background.corner_radius=8 \
            background.height=30 \
-           blur_radius=30
+           blur_radius=10
 
 # --- Items on the right ---
 
 # Date and time
 sketchybar --add item date right \
-           --set date icon=􀧞  \
-                      icon.color=0xffc4a7e7 \
-                      label.color=0xffc4a7e7 \
+           --set date icon=􀧞 \
+                      icon.color=0xffD699B6 \
+                      label.color=0xffD699B6 \
                       update_freq=1 \
                       script="$PLUGIN_DIR/date.sh"
 
 # Volume level
 sketchybar --add item volume right \
-           --set volume icon.color=0xff31748f \
-                        label.color=0xff31748f \
+           --set volume icon.color=0xff83C092 \
+                        label.color=0xff83C092 \
                         script="$PLUGIN_DIR/volume.sh" \
            --subscribe volume volume_change
 
 # Battery level
 sketchybar --add item battery right \
-           --set battery icon.color=0xfff6c177 \
-                         label.color=0xfff6c177 \
+           --set battery icon.color=0xffDBBC7F \
+                         label.color=0xffDBBC7F \
                          update_freq=10 \
                          script="$PLUGIN_DIR/battery.sh" \
            --subscribe battery system_woke power_source_change
@@ -55,7 +55,7 @@ sketchybar --add item weather right \
            --set weather script="$PLUGIN_DIR/weather.sh" \
                          update_freq=290 \
                          icon.drawing=off \
-                         label.color=0xff9ccfd8 \
+                         label.color=0xff7FBBB3 \
                          label.padding_left=10 \
                          label.padding_right=10
 
@@ -73,8 +73,8 @@ for sid in "${SPACE_SIDS[@]}"; do
                      label.font="sketchybar-app-font:Regular:18.0" \
                      label.padding_right=20 \
                      label.y_offset=-2 \
-                     label.color=0xffebbcba \
-                     icon.color=0xffebbcba \
+                     label.color=0xffA7C080 \
+                     icon.color=0xffA7C080 \
                      script="$PLUGIN_DIR/space.sh"
 done
 
@@ -86,7 +86,7 @@ sketchybar --add item space_watcher center \
 # Front app
 sketchybar --add item front_app left \
            --set front_app icon.font="sketchybar-app-font:Regular:18.0" \
-                           icon.color=0xffeb6f92 \
-                           label.color=0xffeb6f92 \
+                           icon.color=0xffE67E80 \
+                           label.color=0xffE67E80 \
                            script="$PLUGIN_DIR/front_app.sh" \
            --subscribe front_app front_app_switched
