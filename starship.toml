@@ -26,13 +26,13 @@ $time\n  \
 palette = "rose-pine"
 
 [palettes.rose-pine]
-overlay = '#26233a'
-love = '#eb6f92'
-gold = '#f6c177'
-rose = '#ebbcba'
-pine = '#31748f'
-foam = '#9ccfd8'
-iris = '#c4a7e7'
+overlay = '#343F44'
+love = '#E67E80'
+gold = '#DBBC7F'
+rose = '#E69875'
+pine = '#7FBBB3'
+foam = '#83C092'
+iris = '#D699B6'
 
 [directory]
 format = "[](fg:overlay)[ $path ]($style)[](fg:overlay) "
@@ -81,7 +81,7 @@ use_12hr = true
 disabled = false
 format = "[](fg:overlay)[ 󰧱 $user ]($style)[](fg:overlay) "
 show_always = true
-style_root = "bg:overlay fg:love"
+style_root = "bg:overlay fg:iris"
 style_user = "bg:overlay fg:iris"
 
 # Languages
