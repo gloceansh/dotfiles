@@ -47,7 +47,7 @@ yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
 
 # Jankyborders
-borders active_color=0xffc4a7e7 inactive_color=0xff6e6a86 width=5.0 hidpi=on &
+borders active_color=0xffA7C080 inactive_color=0xff7A8478 width=5.0 hidpi=on &
 
 # Add padding for Sketchybar on the main display only
 yabai -m config external_bar main:43:0
