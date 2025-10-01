@@ -3,14 +3,13 @@
 if [ "$SELECTED" = true ]; then
   sketchybar --set "$NAME" \
     background.drawing=on \
-    background.color=0xffebbcba \
-    label.color=0xaa2a273f \
-    icon.color=0xaa2a273f
+    background.color=0xffA7C080 \
+    label.color=0xaa343F44 \
+    icon.color=0xaa343F44
 else
   sketchybar --set "$NAME" \
     background.drawing=on \
-    background.color=0xaa2a273f \
-    label.color=0xffebbcba \
-    icon.color=0xffebbcba
+    background.color=0xaa343F44 \
+    label.color=0xffA7C080 \
+    icon.color=0xffA7C080
 fi
-
