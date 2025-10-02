@@ -10,7 +10,6 @@ Here’s an overview of my current setup:
 - **Window Manager**: [yabai](https://github.com/koekeishiya/yabai)
 - **App Borders**: [JankyBorders](https://github.com/FelixKratz/JankyBorders)
 - **Hotkeys**: [skhd](https://github.com/koekeishiya/skhd)
-- **App Launcher**: [Raycast](https://www.raycast.com/)
 - **Status Bar**: [Sketchybar](https://github.com/FelixKratz/SketchyBar)
 - **Terminal**: [ghostty](https://github.com/mitchellh/ghostty)
 - **Shell**: [fish](https://fishshell.com/)
