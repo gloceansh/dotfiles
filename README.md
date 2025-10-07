@@ -18,9 +18,6 @@ Here’s an overview of my current setup:
 
 After using Linux for the past few years, I was surprised by how limited macOS felt out of the box, especially when it came to window management. This setup aims to address those shortcomings, by creating an environment similar to Sway or Hyprland. If you're coming from another tiling window manager, you'll feel right at home with these dotfiles.
 
-> [!NOTE]
-> Currently, yabai is not supported on macOS 26. For now you have to [install from HEAD](https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(from-HEAD)) for macOS 26 compatibility. Keep in mind that the dev version is pretty laggy.
-
 ## 🔎 Details
 
 ### 🌈 Color Scheme
