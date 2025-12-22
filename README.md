@@ -22,7 +22,7 @@ After using Linux for the past few years, I was surprised by how limited macOS f
 
 ### Color Scheme
 
-The main color scheme of my setup is [Rosé Pine](https://rosepinetheme.com/), a minimal yet elegant theme that is easy on the eyes.
+The main color scheme of my setup is [Rosé Pine](https://rosepinetheme.com/), a minimal yet elegant theme that is easy on the eyes. I have included matching wallpapers in the `assets/` directory.
 
 <img src="https://github.com/user-attachments/assets/72adc1ee-21c0-4102-afd8-c52f34ff54ba" alt="Rose Pine" width="600px">
 
