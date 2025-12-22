@@ -1,0 +1,94 @@
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+
+# General Bar Properties
+sketchybar --bar position=top \
+               height=43 \
+               blur_radius=30 \
+               color=0x00000000 \
+               display=main \
+               topmost=window
+
+# Item Defaults
+sketchybar --default \
+           padding_left=5 \
+           padding_right=5 \
+           icon.font="SF Pro:Bold:16.0" \
+           label.font="SF Pro:Bold:14.0" \
+           icon.color=0xffe0def4 \
+           label.color=0xffe0def4 \
+           icon.padding_left=10 \
+           icon.padding_right=4 \
+           label.padding_left=6 \
+           label.padding_right=10 \
+           background.color=0x882a273f \
+           background.corner_radius=8 \
+           background.height=30 \
+           blur_radius=30
+
+# --- Items on the right ---
+
+# Date and time
+sketchybar --add item date right \
+           --set date icon=􀧞  \
+                      icon.color=0xffc4a7e7 \
+                      label.color=0xffc4a7e7 \
+                      update_freq=1 \
+                      script="$PLUGIN_DIR/date.sh"
+
+# Volume level
+sketchybar --add item volume right \
+           --set volume icon.color=0xff31748f \
+                        label.color=0xff31748f \
+                        script="$PLUGIN_DIR/volume.sh" \
+           --subscribe volume volume_change
+
+# Battery level
+sketchybar --add item battery right \
+           --set battery icon.color=0xfff6c177 \
+                         label.color=0xfff6c177 \
+                         update_freq=10 \
+                         script="$PLUGIN_DIR/battery.sh" \
+           --subscribe battery system_woke power_source_change
+
+# Weather
+sketchybar --add item weather right \
+           --set weather script="$PLUGIN_DIR/weather.sh" \
+                         update_freq=600 \
+                         icon.drawing=off \
+                         label.color=0xff9ccfd8 \
+                         label.padding_left=10 \
+                         label.padding_right=10 \
+           --subscribe weather system_woke
+
+# --- Items on the left ---
+
+# Space indicators
+SPACE_SIDS=(1 2 3 4 5 6 7 8 9 10)
+for sid in "${SPACE_SIDS[@]}"; do
+  sketchybar --add space space.$sid left \
+             --set space.$sid \
+                     space=$sid \
+                     icon=$sid \
+                     label.font="sketchybar-app-font:Regular:18.0" \
+                     label.padding_right=20 \
+                     label.y_offset=-2 \
+                     label.color=0xffebbcba \
+                     icon.color=0xffebbcba \
+                     click_script="yabai -m space --focus $sid" \
+                     script="$PLUGIN_DIR/space.sh"
+done
+
+sketchybar --add item space_watcher center \
+           --set space_watcher background.drawing=off \
+                                 script="$PLUGIN_DIR/space_windows.sh" \
+           --subscribe space_watcher space_windows_change
+
+# Front app
+sketchybar --add item front_app left \
+           --set front_app icon.font="sketchybar-app-font:Regular:18.0" \
+                           icon.color=0xffeb6f92 \
+                           label.color=0xffeb6f92 \
+                           script="$PLUGIN_DIR/front_app.sh" \
+           --subscribe front_app front_app_switched
+
+sketchybar --update

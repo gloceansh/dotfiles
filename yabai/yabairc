@@ -1,0 +1,55 @@
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+# Set the defaul tiling option to bsp (floating also available)
+yabai -m config layout bsp
+
+# Set padding between windows
+yabai -m config top_padding    10
+yabai -m config bottom_padding 10
+yabai -m config left_padding   10
+yabai -m config right_padding  10
+yabai -m config window_gap     10
+
+# Turn auto balance on or off (default: off)
+# Auto balance tries to keep all windows around the same size. probably keep it off, it's janky
+yabai -m config auto_balance off
+
+# Set mouse interaction modifier key (default: fn)
+yabai -m config mouse_modifier fn
+
+# Set modifier + left-click drag to move window (default: move)
+yabai -m config mouse_action1 move
+
+# Set modifier + right-click drag to resize window (default: resize)
+yabai -m config mouse_action2 resize
+
+# Set focus follows mouse mode (default: off, options: off, autoraise, autofocus)
+yabai -m config focus_follows_mouse autoraise
+
+# Set mouse follows focus mode (default: off)
+yabai -m config mouse_follows_focus off
+
+# Modify window shadows (default: on, options: on, off, float)
+yabai -m config window_shadow off
+
+# Window opacity (default: off)
+# yabai -m config window_opacity on
+# yabai -m config active_window_opacity 1.0
+# yabai -m config normal_window_opacity 0.9
+
+# Set window animations on
+# yabai -m config window_animation_duration 0.15
+# yabai -m config window_animation_easing ease_out_circ
+
+# Add exceptions to tiling
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
+
+# Jankyborders
+borders active_color=0xffc4a7e7 inactive_color=0xff6e6a86 width=5.0 hidpi=on
+
+# Add padding for Sketchybar on the main display only
+yabai -m config external_bar main:43:0
+# The same as above, but for all displays instead
+# yabai -m config external_bar all:43:0

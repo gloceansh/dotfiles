@@ -1,0 +1,19 @@
+.DS_Store
+
+# User excluded directories
+configstore/
+enchant/
+filezilla/
+github-copilot/
+karabiner/
+mpv/
+nvim/
+emacs/
+raycast/
+
+# Fish: exclude everything except config.fish
+fish/*
+!fish/config.fish
+
+# Sketchybar sensitive info
+sketchybar/sketchybar_env

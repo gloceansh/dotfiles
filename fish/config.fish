@@ -1,0 +1,21 @@
+fish_add_path /opt/homebrew/bin
+fish_add_path /opt/homebrew/sbin
+fish_add_path /Users/glocean/.cargo/bin
+fish_add_path ~/.config/emacs/bin
+fish_add_path /opt/homebrew/opt/openjdk@21/bin
+
+fish_config theme choose "Rosé Pine"
+
+alias neofetch='fastfetch -c neofetch'
+alias pppwn='cd ~/PPPwn && sudo python3 pppwn.py --interface=en8 --fw=1100'
+alias e='emacsclient -c -n'
+
+if status is-interactive
+    if test "$TERM_PROGRAM" != "vscode" -a "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" -a -z "$INSIDE_EMACS"
+        neofetch
+    end
+end
+
+set -U fish_greeting
+
+starship init fish | source

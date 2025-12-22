@@ -1,0 +1,11 @@
+theme = Rose Pine
+
+background-opacity = 0.95
+background-blur = true
+
+window-padding-x = 10
+window-padding-y = 10
+
+macos-titlebar-style = hidden
+
+term = xterm-256color
