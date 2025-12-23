@@ -1,5 +1,6 @@
 .DS_Store
 *.un~
+gh/
 configstore/
 enchant/
 filezilla/
