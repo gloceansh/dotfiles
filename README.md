@@ -24,11 +24,13 @@ After using Linux for the past few years, I was surprised by how limited macOS f
 
 The main color scheme of my setup is [Rosé Pine](https://rosepinetheme.com/), a minimal yet elegant theme that is easy on the eyes. I have included matching wallpapers in the `assets/` directory.
 
-<img src="https://github.com/user-attachments/assets/72adc1ee-21c0-4102-afd8-c52f34ff54ba" alt="Rose Pine" width="600px">
-
 ### Sketchybar Weather
 
-For the sketchybar weather plugin to work properly, you have to create an account and get an API key from [OpenWeather](https://openweathermap.org/api). After signing up, go grab your API key [here](https://home.openweathermap.org/api_keys) and paste it into `~/.config/sketchybar/sketchybar_env`.
+For the sketchybar weather plugin to work properly, you have to create an account and get an API key from [OpenWeather](https://openweathermap.org/api). After signing up, go grab your API key [here](https://home.openweathermap.org/api_keys) and paste it into `~/.config/sketchybar/sketchybar_env`. The contents of the file should be like the following:
+
+```bash
+export API_KEY="your_api_key_here"
+```
 
 > [!NOTE]
 > After creating your account, your API key might not work right away. Wait about 20-30 minutes for it to activate.
