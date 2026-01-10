@@ -13,3 +13,4 @@ raycast/
 fish/*
 !fish/config.fish
 sketchybar/sketchybar_env
+mole/
