@@ -9,6 +9,7 @@ fish_config theme choose "Rosé Pine"
 alias neofetch='fastfetch -c neofetch'
 alias pppwn='cd ~/PPPwn && sudo python3 pppwn.py --interface=en8 --fw=1100'
 alias e='emacsclient -c -n'
+alias burp='brew update && brew upgrade --greedy'
 
 if status is-interactive
     if test "$TERM_PROGRAM" != "vscode" -a "$TERMINAL_EMULATOR" != "JetBrains-JediTerm" -a -z "$INSIDE_EMACS"
