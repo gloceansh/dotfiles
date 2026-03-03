@@ -1,5 +1,6 @@
 .DS_Store
 *.un~
+zed/
 gh/
 configstore/
 enchant/
