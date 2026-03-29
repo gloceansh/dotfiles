@@ -6,7 +6,7 @@ sketchybar --bar position=top \
                blur_radius=30 \
                color=0x00000000 \
                display=main \
-               topmost=window
+               topmost=off
 
 # Item Defaults
 sketchybar --default \

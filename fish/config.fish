@@ -20,3 +20,6 @@ end
 set -U fish_greeting
 
 starship init fish | source
+
+# Created by `pipx` on 2026-03-23 17:09:55
+set PATH $PATH /Users/glocean/.local/bin
