@@ -33,6 +33,9 @@ yabai -m config mouse_follows_focus off
 # Modify window shadows (default: on, options: on, off, float)
 yabai -m config window_shadow off
 
+# Skip some window focus animations. Keep off if using the scripting addition.
+yabai -m config skip_window_focus_animation off
+
 # Window opacity (default: off)
 # yabai -m config window_opacity on
 # yabai -m config active_window_opacity 1.0
