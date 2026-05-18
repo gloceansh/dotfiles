@@ -1,5 +1,8 @@
 PLUGIN_DIR="$CONFIG_DIR/plugins"
 
+# Load theme colors (switched by ~/.config/switch-theme.sh)
+source "$CONFIG_DIR/colors.sh"
+
 # General Bar Properties
 sketchybar --bar position=top \
                height=43 \
@@ -14,13 +17,13 @@ sketchybar --default \
            padding_right=5 \
            icon.font="SF Pro:Bold:16.0" \
            label.font="SF Pro:Bold:14.0" \
-           icon.color=0xffe0def4 \
-           label.color=0xffe0def4 \
+           icon.color="$COLOR_TEXT" \
+           label.color="$COLOR_TEXT" \
            icon.padding_left=10 \
            icon.padding_right=4 \
            label.padding_left=6 \
            label.padding_right=10 \
-           background.color=0x882a273f \
+           background.color="$COLOR_BG" \
            background.corner_radius=8 \
            background.height=30 \
            blur_radius=30
@@ -30,22 +33,22 @@ sketchybar --default \
 # Date and time
 sketchybar --add item date right \
            --set date icon=􀧞  \
-                      icon.color=0xffc4a7e7 \
-                      label.color=0xffc4a7e7 \
+                      icon.color="$COLOR_IRIS" \
+                      label.color="$COLOR_IRIS" \
                       update_freq=1 \
                       script="$PLUGIN_DIR/date.sh"
 
 # Volume level
 sketchybar --add item volume right \
-           --set volume icon.color=0xff31748f \
-                        label.color=0xff31748f \
+           --set volume icon.color="$COLOR_PINE" \
+                        label.color="$COLOR_PINE" \
                         script="$PLUGIN_DIR/volume.sh" \
            --subscribe volume volume_change
 
 # Battery level
 sketchybar --add item battery right \
-           --set battery icon.color=0xfff6c177 \
-                         label.color=0xfff6c177 \
+           --set battery icon.color="$COLOR_GOLD" \
+                         label.color="$COLOR_GOLD" \
                          update_freq=10 \
                          script="$PLUGIN_DIR/battery.sh" \
            --subscribe battery system_woke power_source_change
@@ -55,7 +58,7 @@ sketchybar --add item weather right \
            --set weather script="$PLUGIN_DIR/weather.sh" \
                          update_freq=600 \
                          icon.drawing=off \
-                         label.color=0xff9ccfd8 \
+                         label.color="$COLOR_FOAM" \
                          label.padding_left=10 \
                          label.padding_right=10 \
            --subscribe weather system_woke
@@ -72,8 +75,8 @@ for sid in "${SPACE_SIDS[@]}"; do
                      label.font="sketchybar-app-font:Regular:18.0" \
                      label.padding_right=20 \
                      label.y_offset=-2 \
-                     label.color=0xffebbcba \
-                     icon.color=0xffebbcba \
+                     label.color="$COLOR_ROSE" \
+                     icon.color="$COLOR_ROSE" \
                      click_script="yabai -m space --focus $sid" \
                      script="$PLUGIN_DIR/space.sh"
 done
@@ -86,8 +89,8 @@ sketchybar --add item space_watcher center \
 # Front app
 sketchybar --add item front_app left \
            --set front_app icon.font="sketchybar-app-font:Regular:18.0" \
-                           icon.color=0xffeb6f92 \
-                           label.color=0xffeb6f92 \
+                           icon.color="$COLOR_LOVE" \
+                           label.color="$COLOR_LOVE" \
                            script="$PLUGIN_DIR/front_app.sh" \
            --subscribe front_app front_app_switched
 

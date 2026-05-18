@@ -23,7 +23,7 @@ $time\n  \
 [󱞪](fg:iris) \
 """
 
-palette = "rose-pine"
+palette = "rose-pine-dawn"
 
 [palettes.rose-pine]
 overlay = '#26233a'
@@ -33,6 +33,15 @@ rose = '#ebbcba'
 pine = '#31748f'
 foam = '#9ccfd8'
 iris = '#c4a7e7'
+
+[palettes.rose-pine-dawn]
+overlay = '#f2e9e1'
+love = '#b4637a'
+gold = '#ea9d34'
+rose = '#d7827e'
+pine = '#286983'
+foam = '#56949f'
+iris = '#907aa9'
 
 [directory]
 format = "[](fg:overlay)[ $path ]($style)[](fg:overlay) "

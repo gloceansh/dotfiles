@@ -4,8 +4,6 @@ fish_add_path /Users/glocean/.cargo/bin
 fish_add_path ~/.config/emacs/bin
 fish_add_path /opt/homebrew/opt/openjdk@21/bin
 
-fish_config theme choose "Rosé Pine"
-
 alias neofetch='fastfetch -c neofetch'
 alias pppwn='cd ~/PPPwn && sudo python3 pppwn.py --interface=en8 --fw=1100'
 alias e='emacsclient -c -n'

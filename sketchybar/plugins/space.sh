@@ -1,15 +1,17 @@
 #!/bin/sh
 
+source "$CONFIG_DIR/colors.sh"
+
 if [ "$SELECTED" = true ]; then
   sketchybar --animate tanh 10 --set "$NAME" \
     background.drawing=on \
-    background.color=0xffebbcba \
-    label.color=0xaa2a273f \
-    icon.color=0xaa2a273f
+    background.color="$COLOR_SPACE_SEL_BG" \
+    label.color="$COLOR_SPACE_SEL_FG" \
+    icon.color="$COLOR_SPACE_SEL_FG"
 else
   sketchybar --animate tanh 10 --set "$NAME" \
     background.drawing=on \
-    background.color=0xaa2a273f \
-    label.color=0xffebbcba \
-    icon.color=0xffebbcba
+    background.color="$COLOR_SPACE_UNSEL_BG" \
+    label.color="$COLOR_SPACE_UNSEL_FG" \
+    icon.color="$COLOR_SPACE_UNSEL_FG"
 fi
