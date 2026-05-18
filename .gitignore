@@ -7,6 +7,9 @@
 !starship.toml
 !switch-theme.sh
 
+!assets/
+!assets/*
+
 !btop/
 !btop/btop.conf
 
