@@ -22,7 +22,7 @@ After using Linux for the past few years, I was surprised by how limited macOS f
 
 ### Color Scheme
 
-The main color scheme of my setup is [Rosé Pine](https://rosepinetheme.com/), a minimal yet elegant theme that is easy on the eyes. I have included matching wallpapers in the `assets/` directory.
+The color scheme is [Rosé Pine](https://rosepinetheme.com/) for dark mode and Rosé Pine Dawn for light mode. The setup automatically follows the macOS system appearance, switching themes triggers `switch-theme.sh` via [dark-notify](https://github.com/cormacrelf/dark-notify), which updates Sketchybar, Starship, Fish, and JankyBorders. The rest changes the theme by itself.
 
 ### Sketchybar Weather
 
@@ -83,4 +83,14 @@ For a complete list, please check out the skhd config file.
 
 ## Installation
 
-Clone this repository, and move all of the directories to `~/.config`. The wallpapers are in the assets directory.
+Clone this repository to `~/.config`, then run the setup script:
+
+```bash
+git clone https://github.com/gloceansh/dotfiles.git ~/.config
+bash ~/.config/setup.sh
+```
+
+The script installs all dependencies via Homebrew, sets fish as the default shell, configures the yabai scripting addition, and sets up the dark-notify LaunchAgent for automatic theme switching.
+
+> [!NOTE]
+> SIP must be partially disabled for yabai's scripting addition to work. See the [yabai wiki](https://github.com/asmvik/yabai/wiki/Disabling-System-Integrity-Protection) for instructions. After upgrading yabai, re-run the sudoers section of `setup.sh`.
