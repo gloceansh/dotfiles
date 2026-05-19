@@ -16,8 +16,6 @@
 !fish/
 !fish/config.fish
 !fish/fish_plugins
-!fish/set-dark-theme.fish
-!fish/set-light-theme.fish
 
 !ghostty/
 !ghostty/config
